@@ -1,0 +1,71 @@
+:root{
+  --low: #2C3531;
+  --midLow: #116466;
+  --mid: #D9B08C;
+  --midHigh: #FFCB9A;
+  --high: #D1E8E2;
+  
+  --opacity: 0;
+  background: var(--low);  
+}
+
+* {
+    color: var(--high);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.base--image,
+.cryptomatte,
+.cryptomatte>div {
+  position: absolute
+};
+
+.cryptomatte>div {
+  transform-origin: 0 0;
+  cursor: pointer;
+}
+
+/* .base--image {
+
+} */
+
+.floor {
+  top: 757px;
+  z-index: 1;
+  opacity: var(--opacity);
+}
+
+.floorbox {
+  top: 807px;
+  left: 438px;
+  z-index: 2;
+  opacity: var(--opacity);
+}
+
+.occludingbox {
+  top: 680px;
+  left: 421px;
+  opacity: var(--opacity);
+}
+
+.person {
+  top: 541px;
+  left: 471px;
+  opacity: var(--opacity);
+}
+
+.topbox {
+  top: 0;
+  left: 436px;
+  opacity: var(--opacity);
+}
+
+.trees {
+  top: 70px;
+  left: 0;
+  opacity: var(--opacity);
+}
+
