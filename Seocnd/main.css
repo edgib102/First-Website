@@ -34,38 +34,42 @@
 
 .floor {
   top: 757px;
-  z-index: 1;
+  z-index: 0;
   opacity: var(--opacity);
 }
 
 .floorbox {
   top: 807px;
   left: 438px;
-  z-index: 2;
+  z-index: 5;
   opacity: var(--opacity);
 }
 
 .occludingbox {
   top: 680px;
   left: 421px;
+  z-index: 6;
   opacity: var(--opacity);
 }
 
 .person {
   top: 541px;
   left: 471px;
+  z-index: 4;
   opacity: var(--opacity);
 }
 
 .topbox {
   top: 0;
-  left: 436px;
+  left: 435px;
+  z-index: 4;
   opacity: var(--opacity);
 }
 
 .trees {
   top: 70px;
   left: 0;
+  z-index: 2;
   opacity: var(--opacity);
 }
 

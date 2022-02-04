@@ -2,23 +2,56 @@
 
 <head>
     <title>test site</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="main.css">
+
+    <script>
+        $(function () {
+
+            tippy('[data-tippy-content]', { followCursor: true })
+
+            $('.cryptomatte > div').on('click', function() {
+                console.log("ye")
+            });
+        })
+
+    </script>
 </head>
 
 <html>
+
     <div class="images">
 
-        <div class="base--image">
+        <div class="base--image" data-tippy-content = "Base">
             <img src="Images/base0001.png" alt="">
         </div>
 
         <div class="cryptomatte">
-            <div class="floor">
+            <div class="floor" data-tippy-content = "Floor">
                 <img src="Images/Floor.png" alt="">
             </div>
 
-            <div class="floorbox">
+            <div class="floorbox" data-tippy-content = "Bottom Box">
                 <img src="Images/Box.png" alt="">
+            </div>
+
+            <div class="occludingbox" data-tippy-content = "Front Box">
+                <img src="Images/Cube.png" alt="">
+            </div>
+
+            <div class="person" data-tippy-content = "Person">
+                <img src="Images/Person.png" alt="">
+            </div>
+
+            <div class="topbox" data-tippy-content = "Top Box">
+                <img src="Images/Box2.png" alt="">
+            </div>
+
+            <div class="trees" data-tippy-content = "Trees">
+                <img src="Images/Trees.png" alt="">
             </div>
         </div>
 
