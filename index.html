@@ -14,7 +14,12 @@
             tippy('[data-tippy-content]', { followCursor: true })
 
             $('.cryptomatte > div').on('click', function() {
-                console.log("test")
+                var elem = $(this)
+                var elemText = $(elem).attr("data-tippy-content")
+                var sidebar = $('.sidetext')
+
+                sidebar.html(elemText)
+                
             });
         })
 
@@ -23,9 +28,15 @@
 
 <html>
 
+    <div class="sidebar">
+        <h1 class="sidetext">Placeholder</h1>
+        <hr>
+    </div>       
+
+
     <div class="images">
 
-        <div class="base--image" data-tippy-content = "Base">
+        <div class="base--image">
             <img src="Images/base0001.png" alt="">
         </div>
 
@@ -55,5 +66,7 @@
             </div>
         </div>
 
-    </div>    
+    </div>
+        
+
 </html>

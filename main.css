@@ -73,3 +73,16 @@
   opacity: var(--opacity);
 }
 
+
+.sidebar {
+  background: var(--midLow);
+
+  width: 25%;
+  height: 100vh;
+  float: right;
+}
+
+.sidetext {
+  text-align: center;
+}
+
