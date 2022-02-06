@@ -1,0 +1,19 @@
+{
+    "object-data": {
+        "001": {
+            "id": 1,
+            "name": "Image one",
+            "descripton": "Description of image one"
+        },
+        "002": {
+            "id": 2,
+            "name": "Image two",
+            "descripton": "Description of image two"
+        },
+        "003": {
+            "id": 3,
+            "name": "Image three",
+            "descripton": "Description of image three"
+        }
+    }
+}
