@@ -17,20 +17,37 @@
     padding: 0;
 }
 
-.base--image,
+/* .base--image,
 .cryptomatte,
 .cryptomatte>div {
-  position: absolute
-};
+}; */
+
+.images{
+  position: relative;
+}
 
 .cryptomatte>div {
   transform-origin: 0 0;
   /* cursor: pointer; */
 }
 
-/* .base--image {
+
+.images>div>img{
+  position: absolute;
+  width: auto;
+  height: 80vh;
+}
+
+/* .xx{
+  position: absolute;
 
 } */
+/* .base--image{
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
 
 .floor {
   top: 757px;
