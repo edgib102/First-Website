@@ -1,12 +1,11 @@
 :root{
-  --low: #2C3531;
-  --midLow: #116466;
-  --mid: #D9B08C;
-  --midHigh: #FFCB9A;
-  --high: #D1E8E2;
+  --low: #393B44;
+  --midLow: #8D93AB;
+  --midHigh: #D6E0F0;
+  --high: #F1F3F8;
   
   --opacity: 0;
-  background: var(--low);  
+  background: var(--high);
 }
 
 * {
@@ -16,90 +15,3 @@
     margin: 0;
     padding: 0;
 }
-
-/* .base--image,
-.cryptomatte,
-.cryptomatte>div {
-}; */
-
-.images{
-  position: relative;
-}
-
-.cryptomatte>div {
-  transform-origin: 0 0;
-  /* cursor: pointer; */
-}
-
-
-.images>div>img{
-  position: absolute;
-  width: auto;
-  height: 80vh;
-}
-
-/* .xx{
-  position: absolute;
-
-} */
-/* .base--image{
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-
-.floor {
-  top: 757px;
-  z-index: 0;
-  opacity: var(--opacity);
-}
-
-.floorbox {
-  top: 807px;
-  left: 438px;
-  z-index: 5;
-  opacity: var(--opacity);
-}
-
-.occludingbox {
-  top: 680px;
-  left: 421px;
-  z-index: 6;
-  opacity: var(--opacity);
-}
-
-.person {
-  top: 541px;
-  left: 471px;
-  z-index: 4;
-  opacity: var(--opacity);
-}
-
-.topbox {
-  top: 0;
-  left: 435px;
-  z-index: 4;
-  opacity: var(--opacity);
-}
-
-.trees {
-  top: 70px;
-  left: 0;
-  z-index: 2;
-  opacity: var(--opacity);
-}
-
-
-.sidebar {
-  background: var(--midLow);
-
-  width: 25%;
-  height: 100vh;
-  float: right;
-}
-
-.sidetext {
-  text-align: center;
-}
-
