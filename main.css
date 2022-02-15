@@ -1,17 +1,45 @@
-:root{
+
+root{
   --low: #393B44;
   --midLow: #8D93AB;
   --midHigh: #D6E0F0;
   --high: #F1F3F8;
-  
-  --opacity: 0;
   background: var(--high);
 }
 
 * {
-    color: var(--high);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    color: var(--low);
+    font-family:'Raleway';
     margin: 0;
     padding: 0;
 }
+
+.Raleway-Large-Dark {
+  color: var(--low);
+  font-size: 50px;
+  font-weight: 800;  
+}
+
+.Raleway-Med-Dark {
+  color: var(--low);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.Raleway-27pt-Dark {
+  color: var(--low);
+  font-size: 27px;
+  font-weight: 600;
+}
+
+
+
+.top-bar {
+  height: 10ex;
+}
+
+.top-header {
+  height: 6px;
+}
+
+
