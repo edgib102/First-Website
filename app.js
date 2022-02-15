@@ -27,7 +27,8 @@ $(function () {
         
         var alpha;
 
-        if(isImage){            
+        if(isImage){     
+            target.crossOrigin = "anonymous";      
             ctx.drawImage(target, 0, 0, w, h);
             alpha = ctx.getImageData(x, y, 1, 1).data[3];            
         }
@@ -67,6 +68,7 @@ $(function () {
     //     sidebar.html(elemText + 'ypp');
         
     // });
+
 
 
 
