@@ -1,14 +1,13 @@
 
-root{
+:root{
   --low: #393B44;
   --midLow: #8D93AB;
   --midHigh: #D6E0F0;
   --high: #F1F3F8;
-  background: var(--high);
+  background: var(--);
 }
 
 * {
-    color: var(--low);
     font-family:'Raleway';
     margin: 0;
     padding: 0;
@@ -26,20 +25,104 @@ root{
   font-weight: 700;
 }
 
-.Raleway-27pt-Dark {
-  color: var(--low);
-  font-size: 27px;
+.Raleway-Low-Dark {
+  color: var(--midLow);
+  font-size: 26px;
   font-weight: 600;
 }
 
 
-
-.top-bar {
-  height: 10ex;
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
-.top-header {
+
+.divider{
+  width: 95vw;
   height: 6px;
+  border-width: 0;
+  background-color: var(--low);
+  justify-content: center;
+  margin: auto;
 }
 
+.socials>button{
+  border: 0;
+  background-color: transparent;
+  padding-left: 10px;
+}
+.social-image {
+  height: 19px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2.5vw 32vw 6.5vw auto 2.5vw;
+  grid-template-rows: 5vh 670px auto;
+  /* padding: 10px; */
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* padding-bottom: 100px; */
+  font-size: 30px;
+  text-align: center;
+}
+
+.main-image{
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.side-text{
+  grid-column: 4;
+  grid-row: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.side-text>h1{
+  padding-bottom: 10px;
+}
+
+.about-user{
+  display: flex;
+  align-items: center;
+  /* margin: 0 auto; */
+  padding: 20px;
+  
+}
+.pfp{
+  width: 15%;
+  height: auto;
+}
+
+.bottom-title {
+  grid-column: 2;
+  grid-row: 3;
+  padding-top: 10px;
+}
+
+.nft-button {
+  width: 700px;
+  height: 60px;
+  grid-row: 3;
+  grid-column: 4;
+  margin: auto;
+  border-color: var(--low);
+  border-width: 3px;
+  background-color:transparent;
+}
 
