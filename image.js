@@ -6,7 +6,7 @@
   $(function () {
       for (const [index] of Object.entries(data)) {
           var filePath = data[index].file;
-          var name = data[index].name;
+          var name = data[index].objectName;
 
 
           $(".main-images").append(`<img src="${filePath}" class="selector-images" name="${name}" alt="">`)
