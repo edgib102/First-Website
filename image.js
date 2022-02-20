@@ -7,9 +7,10 @@
       for (const [index] of Object.entries(data)) {
           var filePath = data[index].file;
           var name = data[index].objectName;
+          var objDescription = data[index].description;
 
 
-          $(".main-images").append(`<img src="${filePath}" class="selector-images" name="${name}" alt="">`)
+          $(".main-images").append(`<img src="${filePath}" class="selector-images" name="${name}" description="${objDescription}" alt="">`);
         }
 
       //tippy('[data-tippy-content]', { followCursor: false, trigger: 'click' });
@@ -69,11 +70,13 @@
           // Reset images
           images = [];
           
-          var elemText = $(target).attr("name");
-          console.log(elemText);
+          var elemTitle = $(target).attr("name");
+          var elmDescription = $(target).attr("description");
 
-          $(".object-title-text").html(elemText)
+          console.log(elemTitle);
 
-     
+          setCurrentObejct(elemTitle, elmDescription);
+
+          
       }
   }

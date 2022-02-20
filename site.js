@@ -1,12 +1,26 @@
 
 $(function () {
-    usernames = []
+   
     for (const [index] of Object.entries(data)) {
-        usernames.push(data[index].username);
 
-        $(".collaborator-list").append(`<li class="list-item">${data[index].username}</li>`)        
+        $(".collaborator-list").append(`<li><button id="${index}" class="btn Raleway-Med-midLow">${data[index].username}</button></li>`)        
     }
-    console.log(usernames)
 
+    $(document).on('click', '.btn', function(){
+        id = $(this).attr('id');
 
+        setCurrentObejct(data[id].objectName, data[id].description, data[id].username);
+    });
 })
+
+function buttonClick() {
+    console.log('clicked')
+}
+
+
+function setCurrentObejct(title, description, handle){
+    console.log(title);
+    $(".object-title-text").html(title);
+    $(".object-description-text").html(description);
+    $(".object-handle-text").html(`Suggested by ${handle}`);
+}
