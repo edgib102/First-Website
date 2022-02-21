@@ -278,6 +278,10 @@ button:hover>h1{
   color: var(--midHigh);
 }
 
+.selected{
+  color: var(--midHigh);
+}
+
 .input-search{
   background-color:transparent;
   border-width:0;

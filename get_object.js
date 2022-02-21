@@ -3,9 +3,10 @@ $(function () {
    
     for (const [index] of Object.entries(data)) {
 
-        $(".collaborator-list").append(`<li><button id="${index}" class="btn Raleway-Med-midLow">${data[index].username}</button></li>`)        
+        $(".collaborator-list").append(`<li><button id="${index}" class="btn Raleway-Med-midLow">${data[index].username}</button></li>`)
+        
+    
     }
-
     $(document).on('click', '.btn', function(){
         id = $(this).attr('id');
 
@@ -17,11 +18,6 @@ $(function () {
             }, 180);
            
         });
-
-        
-
-
-
 
     });
 })
