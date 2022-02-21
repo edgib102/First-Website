@@ -60,6 +60,7 @@
 }
 
 .flex-container{
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -86,17 +87,47 @@
   height: 19px;
 }
 
+.modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  justify-content: space-between;
+  text-align: center;
+  background-color: var(--high);
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 80%;
+}
+
+
 
 .main-top{
-  height: 50vmax;
-  /* overflow: auto; */
+  height: 95vh;
+  overflow: auto;
 }
 
 .grid-container {
   height: 100%;
   display: grid;
   grid-template-columns: 2.5vw 32vw 4vw auto 2.5vw;
-  grid-template-rows: 2vh 80% 100%;
+  grid-template-rows: 2vh 80% auto;
   /* padding: 10px; */
 
 }
@@ -159,7 +190,7 @@
   /* padding-top: 10px; */
 }
 
-.nft-button {
+.button {
   width: 90%;
   height: 60px;
   border-color: var(--low);
@@ -168,6 +199,14 @@
   align-self: center;
 }
 
+.button:hover{
+  background-color:var(--low);
+  color: var(--high);
+  border-width: 0px;
+}
+button:hover>h1{
+  color: var(--high);
+}
 
 
 .bottom-main{
@@ -224,7 +263,8 @@
 .list{
   /* padding-top: 100px; */
   margin: 0 auto;
-  height: 90%;
+  height: auto;
+  max-height: 100%;
   width:100%;
   overflow-y: auto;
 }

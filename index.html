@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 
 <head>
-    <title>test site</title>
+    <title>Eden Gibson</title>
     <meta charset="utf-8">
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-    
     <link rel="stylesheet" href="main.css">
-
     <script type="text/javascript" src="image.js"></script>
     <script type="text/javascript" src="data.js"></script>
-    <script type="text/javascript" src="site.js"></script>
+    <script type="text/javascript" src="get_object.js"></script>
+    <script type="text/javascript" src="modal.js"></script>
 
 </head>
 
 <html>
     <body>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h1 class="Raleway-Large-Dark">Hey!</h1>
+                <h1 class="Raleway-Low-Dark">Before you check out this website, I just wated to say a few things. Firstly, this is NOT OPTIMISED FOR MOBILE. It's reccomended 110% that you take a look on your pc. Now, how the website works. Click on parts of the render to show details about it and to see who suggested that bit. Click on people's profile pics to go to their twitter profile. i'll continue this draft later k bye</h1>
+
+                <button id='close' class="button">
+                    <h1 class="Raleway-Med-Dark" style="margin: auto;">Sure thing homie whatever you say</h1>
+                </button>  
+
+            </div>
+
+        </div>
+
         <div class="top-header">
             
             <div style="width: 90vw; margin: auto;">
@@ -44,6 +59,7 @@
             <hr class="divider">  
 
         </div>
+        
 
         <div class="main-top">
             <div class="grid-container">
@@ -64,16 +80,16 @@
                         <h1 class="Raleway-Large-Dark">About NFT</h1>
                         <h1 class="Raleway-Low-Dark wrap" wrap="hard">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>                        
                     </div>
-                    <button class="nft-button">
-                        <h1 class="Raleway-Med-Dark" style="margin: auto;">Link to NFT</h1>
-                    </button>               
+            
                 </div>
-
-                <h1 class="Raleway-Large-Dark" style="grid-column: 2; grid-row: 3; padding-top: 10px; margin: 0 auto;">Title</h1>
+                
+                <button class="button" style="grid-column: 4; grid-row: 3; margin: 0 auto;">
+                    <h1 class="Raleway-Med-Dark" style="margin: auto;">Link to NFT</h1>
+                </button>   
+                <h1 class="Raleway-Large-Dark" style="grid-column: 2; grid-row: 3; margin: auto;">Title</h1>
 
             </div>            
         </div>
-
 
         <div class="bottom-main">
             <div class="grid-bottom-container">
@@ -129,25 +145,6 @@
             </div>
         </div>
 
-
-        <!-- <div class="top-bar">
-
-            <h2 class="Raleway-Large-Dark">yd</h2>
-        </div>
-
-        <p class="Raleway-Large-Dark">ye</p> -->
-
-
-        <!-- <div class="images">
-
-            <div class="base--image">
-                <img src="images2/base.png" alt="">
-            </div>
-            
-        </div> -->
-            
-        
     </body>
-
 
 </html>
