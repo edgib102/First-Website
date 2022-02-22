@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
 
 :root{
   --low: #393B44;
@@ -11,7 +12,7 @@
   background: var(--);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
+
 
 * {
     font-family:'Raleway';
