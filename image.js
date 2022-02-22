@@ -6,10 +6,7 @@
   $(function () {
       for (const [index] of Object.entries(data)) {
 
-          $(".main-images").append(`<img src="${data[index].file}" class="selector-images" 
-          name="${data[index].objectName}" 
-          description="${data[index].description}" 
-          handle="${data[index].username}">`);
+          $(".main-images").append(`<img src="${data[index].file}" class="selector-images" id="${index}" name="" >`);
         }
 
       //tippy('[data-tippy-content]', { followCursor: false, trigger: 'click' });
@@ -58,8 +55,7 @@
           // Get element at clicked position
           var clickedElem = document.elementFromPoint(elem.clientX, elem.clientY);
           return getNonTransparentImage(elem, clickedElem);
-      } else {
-
+        } else {
 
           // Else, we have clicked on non tranparent part of the image
           // So find image in the list and set it to visible
@@ -70,20 +66,15 @@
           // Reset images
           images = [];
           
-          var elemTitle = $(target).attr("name");
-          var elmDescription = $(target).attr("description");
-          var elemHandle = $(target).attr("handle");
+          var id = $(target).attr('id');
 
-
-
-
-            if(typeof $(target).attr("name") == 'undefined'){
-                console.log('undefined')
+            if(typeof data[id].username == 'undefined'){
+                console.log('none')
                 return;
             }
 
-          setCurrentObejct(elemTitle, elmDescription, elemHandle);
+          setCurrentObejct(data[id].objectName, data[id].description, data[id].url, data[id].username, data[id].pfpFile);
 
           
       }
-  }
+    }

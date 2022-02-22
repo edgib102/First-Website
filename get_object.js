@@ -14,8 +14,8 @@ $(function () {
 
         $("html, body").promise().done(function(){
             setTimeout(() => {
-                setCurrentObejct(data[id].objectName, data[id].description, data[id].username);                 
-            }, 180);
+                setCurrentObejct(data[id].objectName, data[id].description, data[id].url, data[id].username, data[id].pfpFile);                 
+            }, 150);
            
         });
 
@@ -26,10 +26,11 @@ function buttonClick() {
     console.log('clicked')
 }
 
-function setCurrentObejct(title, description, handle){
+function setCurrentObejct(title, description, url, handle, pfp){
     console.log(title);
     $(".object-title-text").html(title);
     $(".object-description-text").html(description);
-    $(".object-handle-text").html('Suggested by '+ handle);
+    $(".object-handle-text").html(`Suggested by <a class="link Raleway-Med-Dark" href="${url}">${handle}</a>`);
+    $(".pfp").attr('src', pfp)
 
 }
