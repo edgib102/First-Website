@@ -250,7 +250,17 @@ html {
   .main-body--inner .main-images--wrap {
     margin-bottom: 2.5rem;
   }
-  .main-body--inner .main-images--wrap,
+  .main-body--inner h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  .main-body--inner .main-images--wrap {
+    width: 100%;
+  }
+  .main-body--inner .main-images--wrap h1 {
+    display: none;
+  }
   .main-body--inner .main-description {
     width: 100%;
   }
@@ -343,9 +353,28 @@ html {
   outline: none;
 }
 
-.main-bottom--collaborators .collaborator--search input:focus {
-  -webkit-box-shadow: 0 0 5px 0 var(--high);
-          box-shadow: 0 0 5px 0 var(--high);
+.main-bottom--info {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.main-bottom--info .who {
+  margin-top: 2.5rem;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  text-align: center;
+}
+
+.main-bottom--info .who h1 {
+  padding-bottom: 2.5rem;
+}
+
+.main-bottom--info .thanks {
+  padding-top: 3.5rem;
+}
+
+.main-bottom--info .thanks h1 {
+  padding-bottom: 2.5rem;
 }
 
 /* iPads (portrait and landscape) ----------- */

@@ -251,7 +251,18 @@ html{
             margin-bottom: 2.5rem;
         }
 
-        .main-images--wrap,
+        h1{
+          text-align: center;
+          padding-bottom: 1rem;
+          padding-top: 1rem;
+        }
+
+        .main-images--wrap{
+          width: 100%;
+          h1{
+            display:none;
+          }
+        }
         .main-description {
             width: 100%;
         }  
@@ -343,10 +354,42 @@ html{
                 font-weight: 600;
                 outline: none;
 
-                &:focus{
-                    box-shadow: 0 0 5px 0 var(--high);
-                }
+                // &:focus{
+                //     box-shadow: 0 0 5px 0 var(--high);
+                // }
            }
+        }
+      }
+
+      &--info{
+        width: 100%;
+        margin-top: 2.5rem;
+        // text-align: center;
+        // p{
+        //   margin-top: 2.5rem;
+        //   padding-bottom: 2.5rem;
+        //   padding-left: 8rem;
+        //   padding-right: 8rem;
+        //   // text-align:center;
+     
+        // }
+        .who{
+          margin-top: 2.5rem;
+          // padding-bottom: 2.5rem;
+          padding-left:16rem;
+          padding-right:16rem;
+          text-align:center;
+
+          h1{
+            padding-bottom: 2.5rem;
+          }   
+        }
+
+        .thanks{
+          padding-top: 3.5rem;
+          h1{
+            padding-bottom: 2.5rem;
+          }
         }
       }
   }
@@ -363,7 +406,6 @@ html{
         .main-bottom--collectors,
         .main-bottom--collaborators{
             width: 100%;
-
             input{
                 width: calc(100% - 2.5rem);
             }
