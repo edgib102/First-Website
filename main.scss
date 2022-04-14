@@ -360,6 +360,16 @@ html{
           position: relative;
 
         }
+
+        .slick-next:before {
+          // content: url('Web Content/arrow.png');
+          // display: none;
+          // width: 1000px !important;
+          padding-left: 2rem;
+          font-size: 3rem;
+          color: var(--midHigh) !important;
+          // margin: auto;
+        }
           // width: 65%;
           // display: flex;
 

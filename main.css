@@ -362,6 +362,12 @@ html {
   position: relative;
 }
 
+.main-bottom--collectors .slick-next:before {
+  padding-left: 2rem;
+  font-size: 3rem;
+  color: var(--midHigh) !important;
+}
+
 .main-bottom--collaborators {
   width: 30%;
 }
