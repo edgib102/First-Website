@@ -6,15 +6,20 @@
     <meta charset="utf-8">
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script type="text/javascript" src="image.js"></script>
     <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="get_object.js"></script>
     <script type="text/javascript" src="modal.js"></script>
     <script type="text/javascript" src="search.js"></script>
     <script type="text/javascript" src="site.js"></script>
+    <script type="text/javascript" src="slide.js"></script>
 
 </head>
 
@@ -49,6 +54,10 @@
 
             <div class="socials">
 
+                <button onclick="location.href='https://foundation.app/@edngibson';" />
+                <img class="social-image" src="Web Content/fnd.png" alt="">
+                </button>
+
                 <button onclick="location.href='https://opensea.io/edngibson?tab=created';" />
                 <img class="social-image" src="Web Content/Opensea.png" alt="">
                 </button>
@@ -60,6 +69,7 @@
                 <button onclick="location.href='https://twitter.com/edngibson';" />
                 <img class="social-image" src="Web Content/twitter.png" alt="">
                 </button>
+                
 
             </div>
 
@@ -118,7 +128,9 @@
             <div class="main-bottom--collectors">
                 <h2 class="raleway-Large-Light header1">Collectors</h2>
                 <div class="collectors">
-                    <div class="person">
+
+                    <div class="one--collector">
+                        <div class="person">
 
                         <div class="image-text">
                             <div class="person--image">
@@ -163,7 +175,58 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+
+                    <div class="two--collector">
+                        <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/sarah.jpg" alt="">
+                            </div>
+                            <div class="person--desc">
+                                <h3 class="raleway-Med-Light">Sarah</h3>
+                            <p class="raleway-Low-Light">Saccxcccrah is an amazing human being
+                                who brought TWO pieces directly after my first ever collection went live. After meeting
+                                her in person, it only solidified my thoughts on her being such a vibrant and upbeat
+                                person, and I'm forever grateful to her.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/james.jpg" alt="">
+                            </div>
+                            <div class="person--desc"><h3 class="raleway-Med-Light">James</h3>
+                                <p class="raleway-Low-Light">James is a super interesting guy,
+                                    who has a deep passion for daos and crypto. He's the kind of guy where you always learn
+                                    something new after talking to him. After attending an exhibition he and the TyanHaus
+                                    crew hosted, he pushed for the sale of my collection like no other, and helped make it
+                                    completely sell out!</p></div>
+
+                        </div>
+                    </div>
+                    <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/callum.jpg" alt="">
+                            </div>
+                            <div class="person--desc">
+                                <h3 class="raleway-Med-Light">Callum</h3>
+                                <p class="raleway-Low-Light">Callum is a solid dude who drops
+                                    shit like it's nothing. When James was pushing for my collection, right there on the
+                                    spot he brought a piece without thinking twice. He's the kind of guy that you always
+                                    love to see, and always adds something to every interaction you have</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                   
                 </div>
+                <button id="toggle-button">click</button>
             </div>
             <div class="main-bottom--collaborators">
                 <h2 class="raleway-Large-Light header2">Collaborators</h2>

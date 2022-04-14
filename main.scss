@@ -8,9 +8,9 @@
   --midHigh: #D6E0F0;
   --high: #F1F3F8;
 
-  --collectorColor: yellow;
-  // --collectorHoverColor:orange;
-  --hoverColor: var(--midHigh);
+  --collectorColor: var(--midLow);
+  --collectorHighlightColor: #faf6eb;
+  --normalHoverColor: var(--midHigh);
 
   --largeFontSize: 4.8rem;
   --medFontSize: 3.4rem;
@@ -76,17 +76,19 @@ html{
         font-weight: 700;
       }
   }
-  
   .socials > button {
     border: 0;
     background-color: transparent;
     padding-left: 10px;
+    cursor: pointer;
   }
   
   .social-image {
     height: 19px;
   }
   
+
+
   .selected{
     color:var(--midHigh)
   }
@@ -95,6 +97,13 @@ html{
     color:var(--collectorColor) !important;
   }
 
+
+  .normalHover{
+    color:var(--normalHoverColor)!important;
+  }
+  .collectorHover{
+    color:var(--collectorHighlightColor) !important;
+  }
   .modal {
     display: block;
     position: fixed;
@@ -104,6 +113,7 @@ html{
   
     /* Sit on top */
     padding-top: 100px;
+    // margin-top: 10rem;
   
     /* Location of the box */
     left: 0;
@@ -123,24 +133,27 @@ html{
     background-color: rgba(0, 0, 0, 0.4);
   
     /* Black w/ opacity */
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 45px;
+      justify-content: space-between;
+      text-align: center;
+      background-color: var(--high);
+      margin: auto;
+      padding: 2rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 4rem;
+      width: 70%;
+
+    }    
   }
   
   /* Modal Content */
-  .modal-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 45px;
-    justify-content: space-between;
-    text-align: center;
-    background-color: var(--high);
-    margin: auto;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 40px;
-    width: 70%;
-  }
+
 
   // Fixed width for inner containers
   .main-header,
@@ -167,8 +180,6 @@ html{
 
     &:hover{
         cursor: pointer;
-        background-color:var(--low);
-        color: var(--high);
     }
   }
 
@@ -189,19 +200,28 @@ html{
 
   // Main Body
   .main-body{
-    &--inner{
-
+    &--inner{       
         .main-images--wrap,
         .main-description{
             align-items: flex-start;
+            // align-items: space-between;
             overflow: hidden;
+        }
+
+        .side-text{
+          height: calc(90% - 20rem);
+          padding-bottom: 10rem;
+          display: flex;
+          // align-items: space-between;
+          justify-content: space-between;
+          flex-direction: column;
         }
 
         // Main Images
         .main-images{
             &--wrap{
                 text-align: center;
-                width: 40%;
+                width: 35%;
 
                 h1{
                     margin: 1rem 0;
@@ -249,6 +269,12 @@ html{
                     width: 15rem;
                     margin-right: 4rem;
                 }
+                a{
+                  color: #393B44;
+                }
+                a:hover{
+                  color:var(--midLow)
+                }
             }
 
         }
@@ -289,7 +315,7 @@ html{
       background: var(--low);
 
       &--inner{
-          padding: 5rem 0;
+          padding: 2.5rem 0;
 
           h2{
               margin-bottom: 2.5rem;
@@ -328,7 +354,15 @@ html{
       }
 
       &--collectors{
-          width: 65%;
+        width: 65%;
+        .collector-container{
+          display: flex;
+          position: relative;
+
+        }
+          // width: 65%;
+          // display: flex;
+
       }
 
       &--collaborators{
@@ -339,12 +373,26 @@ html{
             // margin-right: 100rem;
             margin: auto 0;
             list-style-type: none;
+            
 
             li{
                 padding: 1rem 0;
                 margin-left: 0.5rem;
+                display: flex;
+                // position: relative;
+                // flex-direction: row;
                 // list-style-type: none;
                 // margin: auto;
+                .eth-logo{
+                  // position: absolute;
+                  width: 3.5%;
+                  height: auto;
+                  padding-left: 1rem;
+                  margin: auto 0;
+                  // opacity: 50%;
+                  transform: translatey(13%);
+                  // bottom: 0;
+                }
                 button{
                     background: none;
                     border: none;
@@ -353,7 +401,7 @@ html{
                     
                     &:hover{
                         cursor: pointer;
-                        color:var(--hoverColor) !important
+                        // color:var(--hoverColor);
                     }
                 }
             }
@@ -393,6 +441,8 @@ html{
         // }
         .who{
           margin-top: 2.5rem;
+          padding-bottom: 5rem;
+          // margin-top: 5rem;
           // padding-bottom: 2.5rem;
           padding-left:16rem;
           padding-right:16rem;
@@ -400,15 +450,22 @@ html{
 
           h1{
             padding-bottom: 2.5rem;
-          }   
+          }  
+           
         }
-
         .thanks{
-          padding-top: 3.5rem;
+          margin-top: 2.5rem;
+          padding-bottom: 5rem;
+
+          padding-left:16rem;
+          padding-right:16rem;
+          text-align:left;
           h1{
             padding-bottom: 2.5rem;
-          }
+          }  
         }
+
+        
       }
   }
 
