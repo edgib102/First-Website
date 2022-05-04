@@ -56,8 +56,9 @@ function buttonClick() {
 function setCurrentObejct(title, description, url, handle, pfp){
     console.log(title);
     $(".object-title-text").html(title);
-    $(".object-description-text").html(description);
-    $(".object-handle-text").html(`Suggested by <a class="link Raleway-Med-Dark" href="${url}">${handle}</a>`);
+    $(".object-description-text").html(description); //https://twitter.com/${replace('@',handle)}
+    $(".object-handle-text").html(`Suggested by <a class="link Raleway-Med-Dark" href="https://twitter.com/${handle.replace('@','')}">${handle}</a>`);
+    console.log(`https://twitter.com/${handle.replace('@','')}`)
     $(".pfp").attr('src', pfp)
 
 }
