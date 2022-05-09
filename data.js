@@ -12,7 +12,7 @@ const data = {
         "username": "@Creative_h0bby",
         "pfpFile": "Web Content/ali.jpg",
         "objectName": "Drift",        
-        "description": '"Make Ned&#39;s car hit a massive drift" Well, ok! If you look at the <a href="https://imgur.com/a/A3VfInQ">behind the scenes</a> while creating, you&#39;ll see that it was initially much bigger, but I had to tone it down a bit due to the concern of him about to crash.',
+        "description": '"Make Ned&#39;s car hit a massive drift" Well, ok! If you look at the <a target="_blank" href="https://imgur.com/a/A3VfInQ">behind the scenes</a> while creating, you&#39;ll see that it was initially much bigger, but I had to tone it down a bit due to the concern of him about to crash.',
         "userType": "collectorType"     
     },
     "003": {
