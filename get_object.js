@@ -49,10 +49,6 @@ $(function () {
     });
 })
 
-function buttonClick() {
-    console.log('clicked')
-}
-
 function setCurrentObejct(title, description, url, handle, pfp){
     console.log(title);
     $(".object-title-text").html(title);
