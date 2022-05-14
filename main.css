@@ -170,15 +170,33 @@ html {
 
 .button {
   border-color: var(--low);
-  border-width: 3px;
+  border-width: 4px;
   background-color: transparent;
   width: 100%;
   padding: 1rem;
   margin: 2.5rem 0;
+  border-style: solid;
 }
 
 .button:hover {
   cursor: pointer;
+  color: var(--midLow);
+  border-color: var(--midlow);
+}
+
+.button--dark {
+  border-color: var(--midHigh);
+  border-width: 4px;
+  background-color: transparent;
+  width: 50%;
+  padding: 1rem;
+  border-style: solid;
+}
+
+.button--dark:hover {
+  cursor: pointer;
+  color: var(--high);
+  border-color: var(--high);
 }
 
 .flex {
@@ -366,12 +384,6 @@ html {
   position: relative;
 }
 
-.main-bottom--collectors .slick-next:before {
-  padding-left: 2rem;
-  font-size: 3rem;
-  color: var(--midHigh) !important;
-}
-
 .main-bottom--collaborators {
   width: 30%;
 }
@@ -391,7 +403,7 @@ html {
 }
 
 .main-bottom--collaborators ol li .eth-logo {
-  width: 3.5%;
+  width: 1.7rem;
   height: auto;
   padding-left: 1rem;
   margin: auto 0;
@@ -416,13 +428,17 @@ html {
 
 .main-bottom--collaborators .collaborator--search input {
   background: none;
-  border: 4px solid var(--high);
+  border: 4px solid var(--midHigh);
   width: 90%;
   padding: 1rem;
   color: var(--midLow);
   font-size: var(--lowFontSize);
   font-weight: 600;
   outline: none;
+}
+
+.main-bottom--collaborators .collaborator--search input:focus {
+  border-color: var(--high);
 }
 
 .main-bottom--info {
@@ -433,8 +449,8 @@ html {
 .main-bottom--info .who {
   margin-top: 5rem;
   padding-bottom: 5rem;
-  padding-left: 16rem;
-  padding-right: 16rem;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: center;
 }
 
@@ -445,9 +461,9 @@ html {
 .main-bottom--info .thanks {
   margin-top: 2.5rem;
   padding-bottom: 5rem;
-  padding-left: 16rem;
-  padding-right: 16rem;
-  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
 }
 
 .main-bottom--info .thanks h1 {
@@ -458,9 +474,9 @@ html {
 @media screen and (min-width: 240px) and (max-width: 1024px) {
   .main-bottom--inner {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .main-bottom--inner .main-bottom--collectors {
     margin-bottom: 2.5rem;
@@ -472,6 +488,26 @@ html {
   .main-bottom--inner .main-bottom--collectors input,
   .main-bottom--inner .main-bottom--collaborators input {
     width: calc(100% - 2.5rem);
+  }
+  .main-bottom--inner .main-bottom--collaborators {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-bottom--inner .main-bottom--collaborators ol {
+    -webkit-columns: 2;
+            columns: 2;
+  }
+  .main-bottom--inner .collaborator--search {
+    width: 80%;
+    padding-bottom: 5rem;
   }
   /* Styles */
 }
