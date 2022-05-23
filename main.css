@@ -5,7 +5,7 @@
   --midHigh: #D6E0F0;
   --high: #F1F3F8;
   --collectorColor: var(--midLow);
-  --collectorHighlightColor: #faf6eb;
+  --collectorHighlightColor: var(--midHigh);
   --normalHoverColor: var(--midHigh);
   --largeFontSize: 4.8rem;
   --medFontSize: 3.4rem;
