@@ -73,6 +73,16 @@ html {
   font-weight: 700;
 }
 
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 240px) and (max-width: 1024px) {
+  :root {
+    --largeFontSize: 5.8rem;
+    --medFontSize: 4.4rem;
+    --lowFontSize: 3.5rem;
+  }
+  /* Styles */
+}
+
 .socials > button {
   border: 0;
   background-color: transparent;
@@ -166,6 +176,10 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-bottom--inner {
+  padding-bottom: 0 !important;
 }
 
 .button {
@@ -311,6 +325,7 @@ html {
             flex-direction: column;
   }
   .main-body--inner .main-images--wrap {
+    margin: auto;
     margin-bottom: 2.5rem;
   }
   .main-body--inner h1 {
@@ -319,7 +334,7 @@ html {
     padding-top: 1rem;
   }
   .main-body--inner .main-images--wrap {
-    width: 100%;
+    width: 90%;
   }
   .main-body--inner .main-images--wrap h1 {
     display: none;

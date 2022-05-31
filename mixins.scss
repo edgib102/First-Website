@@ -5,3 +5,9 @@
     /* Styles */
     }
 }
+
+@mixin laptop {
+    @media screen and (min-width : 1024px) and (max-width : 1650px) {
+        @content;
+    }
+}

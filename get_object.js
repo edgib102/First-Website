@@ -42,7 +42,7 @@ $(function () {
         $("html, body").promise().done(function(){
             setTimeout(() => {
                 setCurrentObejct(data[id].objectName, data[id].description, data[id].url, data[id].username, data[id].pfpFile);                 
-            }, 150);
+            }, 0);
            
         });
 

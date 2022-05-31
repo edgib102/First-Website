@@ -82,6 +82,15 @@ html{
         font-weight: 700;
       }
   }
+
+  @include iPad() {
+      :root{
+        --largeFontSize: 5.8rem;
+        --medFontSize: 4.4rem;
+        --lowFontSize: 3.5rem;
+      }
+  }
+
   .socials > button {
     border: 0;
     background-color: transparent;
@@ -173,6 +182,10 @@ html{
           margin: auto;
           justify-content: space-between;
       }
+  }
+
+  .main-bottom--inner{
+    padding-bottom: 0 !important;
   }
 
   // nft-button
@@ -310,10 +323,12 @@ html{
 // IPad
 @include iPad(){
     .main-body--inner{
-        flex-direction: column;   
+        flex-direction: column; 
 
         .main-images--wrap{
+          margin: auto;
             margin-bottom: 2.5rem;
+          // width: 90% !important;
         }
 
         h1{
@@ -323,7 +338,7 @@ html{
         }
 
         .main-images--wrap{
-          width: 100%;
+          width: 90%;
           h1{
             display:none;
           }
@@ -334,6 +349,12 @@ html{
     }
 }
 
+@include laptop(){
+    .main-body{
+      // background-color: yellow !important;    
+    }
+
+}
 
   // Main Bottom
   .main-bottom{
