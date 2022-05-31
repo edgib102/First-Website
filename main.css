@@ -418,6 +418,9 @@ html {
 .main-bottom--collaborators ol li {
   padding: 1rem 0;
   margin-left: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-bottom--collaborators ol li .eth-logo {
