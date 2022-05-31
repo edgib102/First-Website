@@ -350,9 +350,9 @@ html{
 }
 
 @include laptop(){
-    .main-body{
-      // background-color: yellow !important;    
-    }
+  .object-nft-text{
+    text-align: center;
+  }
 
 }
 

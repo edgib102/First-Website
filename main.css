@@ -345,6 +345,12 @@ html {
   /* Styles */
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1650px) {
+  .object-nft-text {
+    text-align: center;
+  }
+}
+
 .main-bottom {
   margin-top: 2.5rem;
   background: var(--low);
