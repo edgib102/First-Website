@@ -248,11 +248,12 @@ html{
         }
 
         .side-text{
-          height: calc(90% - 20rem);
+          // height: calc(90% - 20rem);
+          height: 90%;
           padding-bottom: 10rem;
           display: flex;
           // align-items: space-between;
-          justify-content: space-between;
+          justify-content: space-around;
           flex-direction: column;
         }
 
@@ -440,7 +441,7 @@ html{
       }
 
       &--collaborators{
-        width: 30%;
+        // width: 30%;
 
         ol{
             margin-left: 3.5rem;
@@ -553,6 +554,9 @@ html{
 
         .main-bottom--collectors{
             margin-bottom: 2.5rem;
+            .slideshow-button{
+              width: 65%;
+            }
         }
 
         .main-bottom--collectors,

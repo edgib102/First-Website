@@ -30,6 +30,11 @@ $(function() {
         }
       });
       $(".input-search").on("focus", function() {
+        // --normalHoverColor: var(--midHigh);
+        // $(":root").css("--low", "red");
+        // document.documentElement.style.setProperty('--collectorColor', '#8D93AB');
+        // document.documentElement.style.setProperty('--collectorHighlightColor', '--midHigh');
+
         for (const [index] of Object.entries(handleArr)) {
             userType = checkUserType($(handleArr[index]).attr('class'))
             handleArr[index].classList.add(userType); 
