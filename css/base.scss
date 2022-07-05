@@ -1,0 +1,92 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
+
+:root{
+  --low: #393B44;
+  --midLow: #8D93AB;
+  --midHigh: #D6E0F0;
+  --high: #F1F3F8;
+
+  --collectorColor: var(--midLow);
+  --collectorHighlightColor: var(--midHigh);
+  --normalHoverColor: var(--midHigh);
+
+  --largeFontSize: 4.8rem;
+  --medFontSize: 3.4rem;
+  --lowFontSize: 2.5rem;
+
+}
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    // width: 100vw;
+    // position: fixed;
+    // position: absolute;
+}
+
+* {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    a{
+      color: var(--midLow);
+    }
+  }
+
+  
+  .raleway{
+      &-Large-Dark {
+        color: var(--low);
+        font-size: var(--largeFontSize);
+        font-weight: 800;
+      }
+
+      &-Med-Dark {
+        color: var(--low);
+        font-size: var(--medFontSize);
+        font-weight: 700;
+      }
+
+      &-Low-Dark {
+        color: var(--midLow);
+        font-size: var(--lowFontSize);
+        font-weight: 600;
+      }
+
+      &-Large-Light {
+        color: var(--midHigh);
+        font-size: var(--largeFontSize);
+        font-weight: 800;
+      }
+
+      &-Med-Light {
+        color: var(--midHigh);
+        font-size: var(--medFontSize);
+        font-weight: 700;
+      }
+
+      &-Low-Light {
+        color: var(--midLow);
+        font-size: var(--lowFontSize);
+        font-weight: 600;
+      }
+
+      &-Med-midLow {
+        color: var(--midLow);
+        font-size: var(--medFontSize);
+        font-weight: 700;
+      }
+  }
+
+  @include iPad() {
+      :root{
+        --largeFontSize: 5.8rem;
+        --medFontSize: 4.4rem;
+        --lowFontSize: 3.5rem;
+      }
+  }

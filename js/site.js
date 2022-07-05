@@ -16,11 +16,8 @@ $(function (){
     //     $(this).prev().slick('slickNext');
     // });
 
-
     lastHeight = Math.max($(".collector").height());
 
-    $('#last-collector').css("height", lastHeight + "px")
-
-    
+    $('#last-collector').css("height", lastHeight + "px")    
 
 });

@@ -1,6 +1,6 @@
 const data = {
     "001": {
-        "file": "images3/Car.png",
+        "file": "community_render_content/Car.png",
         "username": "@NedRyersonBing",
         "pfpFile": "Web Content/Ned.jpg",
         "objectName": "Car",        
@@ -8,7 +8,7 @@ const data = {
         "userType": "collectorType"      
     },
     "002": {
-        "file": "images3/Drift.png",
+        "file": "community_render_content/Drift.png",
         "username": "@Creative_h0bby",
         "pfpFile": "Web Content/ali.jpg",
         "objectName": "Drift",        
@@ -16,7 +16,7 @@ const data = {
         "userType": "collectorType"     
     },
     "003": {
-        "file": "images3/Mountains.png",
+        "file": "community_render_content/Mountains.png",
         "username": "@sarahc_eth",
         "pfpFile": "Web Content/sarah.jpg",
         "objectName": "Mountains",        
@@ -24,7 +24,7 @@ const data = {
         "userType": "collectorType"     
     },
     "004": {
-        "file": "images3/Road.png",
+        "file": "community_render_content/Road.png",
         "username": "@gladstonecallum",
         "pfpFile": "Web Content/callum.jpg",
         "objectName": "Road",        
@@ -32,7 +32,7 @@ const data = {
         "userType": "collectorType"     
     },
     "005": {
-        "file": "images3/Snow.png",
+        "file": "community_render_content/Snow.png",
         "username": "@mrjonkane",
         "pfpFile": "Web Content/jon.jpg",
         "objectName": "Snow",        
@@ -40,7 +40,7 @@ const data = {
         "userType": "collectorType"     
     },
     "006": {
-        "file": "images3/Snowstorm.png",
+        "file": "community_render_content/Snowstorm.png",
         "username": "@blockchainjames",
         "pfpFile": "Web Content/james.jpg",
         "objectName": "Snowstorm",        
@@ -48,7 +48,7 @@ const data = {
         "userType": "collectorType"     
     },
     "007": {
-        "file": "images3/Snow Bank.png",
+        "file": "community_render_content/Snow Bank.png",
         "username": "@coopahtroopa",
         "pfpFile": "Web Content/coopah.jpg",
         "objectName": "Snow Bank",        

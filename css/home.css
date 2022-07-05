@@ -1,0 +1,62 @@
+.main-header {
+  margin: 1rem 0 2.5rem 0;
+}
+
+.main-header--inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.6rem solid var(--low);
+}
+
+.main-header--inner .header--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header--inner .header--content div {
+  padding-left: 5rem;
+}
+
+.main-header--inner .header--content div a {
+  padding-left: 2rem;
+}
+
+.main-header--inner .header--content .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header--inner .header--content .socials button {
+  border: 0;
+  background-color: transparent;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.main-header--inner .header--content .social-image {
+  height: 19px;
+}
+
+.main-header,
+.main-body,
+.main-bottom {
+  padding: 0 2.5rem;
+}
+
+.main-header--inner,
+.main-body--inner,
+.main-bottom--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=home.css.map */

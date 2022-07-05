@@ -1,0 +1,226 @@
+.main-header,
+.main-body,
+.main-bottom {
+  padding: 0 2.5rem;
+}
+
+.main-header--inner,
+.main-body--inner,
+.main-bottom--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-body--inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-header {
+  margin: 1rem 0 2.5rem 0;
+}
+
+.main-header--inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.6rem solid var(--low);
+}
+
+.main-header--inner .header--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header--inner .header--content div {
+  padding-left: 5rem;
+}
+
+.main-header--inner .header--content div a {
+  padding-left: 2rem;
+}
+
+.main-header--inner .header--content .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header--inner .header--content .socials button {
+  border: 0;
+  background-color: transparent;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.main-header--inner .header--content .social-image {
+  height: 19px;
+}
+
+.top-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-nav div {
+  padding-top: 3rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.top-nav div button {
+  background-color: transparent;
+  border: 0;
+}
+
+.top-nav div button:hover {
+  color: var(--midLow);
+  cursor: pointer;
+}
+
+.top-nav div #anim:hover {
+  color: var(--midLow);
+  cursor: pointer;
+  -webkit-animation: swing 0.5s ease;
+          animation: swing 0.5s ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.still-header,
+.animation-header {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.still-header--inner,
+.animation-header--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.6rem solid var(--low);
+}
+
+.still-content,
+.animation-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr 3fr;
+      grid-template-columns: 3fr 3fr 3fr;
+  height: 100%;
+}
+
+.still-content div,
+.animation-content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.still-content div img,
+.animation-content div img {
+  margin: 0 auto;
+  height: 90%;
+  width: 90%;
+}
+
+.still-content div h1,
+.animation-content div h1 {
+  margin: auto;
+}
+
+.still-content div iframe,
+.animation-content div iframe {
+  aspect-ratio: 4/5;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=gallery.css.map */

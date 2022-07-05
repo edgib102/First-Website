@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Eden Gibson</title>
+    <link rel="shortcut icon" href="Web Content/favicon.ico" />
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="text/javascript" src="js/image.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <!-- <script type="text/javascript" src="dataOld.js"></script> -->
+    <script type="text/javascript" src="js/get_object.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
+
+</head>
+
+<html>
+
+<body>
+    <div style="overflow-x: hidden;">
+
+    
+    <!-- The Modal -->
+    <!-- <div id="myModalx" class="modal" style="">
+
+        <div class="modal-content">
+            <h1 class="raleway-Large-Dark">Hey!</h1>
+            <p class="raleway-Low-Dark">Before you check out this website, I just wanted to say a few things. Firstly,
+                this is NOT DESIGNED FOR MOBILE. It's recommended 110% that you take a look on your pc.
+                This is a stage where you're taking a look at a mockup of the actual final content, so the stuff you see
+                wasn't actually suggested by anyone, it was just me having fun (: <br><br>Apart from that, I just wanna
+                say thank you for taking to time to look at this! It makes all the time I spent worth it in the end.
+            </p>
+
+            <button id='close' class="button">
+                <h1 class="raleway-Med-Dark" style="margin: auto;">Sure</h1>
+            </button>
+
+        </div>
+
+    </div> -->
+
+    <div class="main-header">
+        <div class="main-header--inner">
+            <h1 class="raleway-Med-Dark">Eden Gibson</h1>
+
+
+            <div class="header--content">
+                <div>
+                    <a class="raleway-Low-Dark" href="index.html">Home</a>                             
+                    <a class="raleway-Low-Dark" href="gallery.html">Gallery</a>                    
+                </div>
+                
+                <div class="socials">
+                    <button onclick=" window.open('https://foundation.app/@edngibson','_blank')">
+                        <img class="social-image" src="Web Content/fnd.png" alt="" />
+                    </button>
+
+                    <button onclick=" window.open('https://opensea.io/edngibson?tab=created','_blank')">
+                        <img class="social-image" src="Web Content/opensea.png" alt="" />
+                    </button>
+
+                    <button onclick=" window.open('https://www.instagram.com/edngibson/','_blank')">
+                        <img class="social-image" src="Web Content/insta.png" alt="" />
+                    </button>
+
+                    <button onclick=" window.open('https://twitter.com/edngibson','_blank')">
+                        <img class="social-image" src="Web Content/twitter.png" alt="" />
+                    </button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="main-body">
+        <div class="main-body--inner">
+            <div class="main-images--wrap">
+                <div class="main-images">
+                    <img class="base-image" src="community_render_content/Base.png" alt="">
+                </div>
+                <h1 class="raleway-Large-Dark">Title</h1>
+            </div>
+
+
+            <div class="main-description">
+                <div class="side-text">
+                    <div class="object-info">
+                        <h1 class="raleway-Large-Dark object-title-text">How the website works</h1>
+                        <p class="raleway-Low-Dark object-description-text" wrap="hard">Click on different areas of the
+                            image to see who suggested what. Down the bottom, you have a list of all the people
+                            involved, so click on a username to see the details of what they suggested. </p>
+                    </div>
+                    <div class="about-user">
+                        <img class="pfp" src="Web Content/eden.jpg" alt="">
+                        <h2 class="raleway-Med-Dark wrap object-handle-text">Made by <a class="link raleway-Med-Dark" target="_blank"
+                                href="https://twitter.com/edngibson">@edngibson</a></h2>
+                    </div>
+                    <div class="about-nft">
+                        <h1 class="raleway-Large-Dark object-nft-text">About NFT</h1>
+                        <p class="raleway-Low-Dark wrap" wrap="hard">This piece was created by aggregating a ton of
+                            your submissions into one big render. I asked you all what you'd like to have included in a
+                            Twitter post, and complied all that I could manage over an x day period into this. <br>
+                            <br>This is the very first piece in an ongoing collection around community projects, where I
+                            try and get everyone involved, so keep an eye out!
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="button raleway-Med-Dark nft-button">
+                    Link to NFT
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-bottom">
+        <div class="main-bottom--inner">
+
+            <div class="main-bottom--collectors">
+                <h2 class="raleway-Large-Light header1">Collectors</h2>
+                <div class="collectors">
+
+                    <div class="collector">
+
+                        <div class="person">
+
+                            <div class="image-text">
+                                <div class="person--image">
+                                    <img class="collector-img" src="Web Content/Ned.jpg" alt="">
+                                </div>
+                                <div class="person--desc">
+                                    <h3 class="raleway-Med-Light">Ned</h3>
+                                    <p class="raleway-Low-Light">After I dropped my genesis fnd piece, I was super anxious about how it would go. 
+                                        Then, Ned came in and placed a bid! The reason was that he liked the piece, and wanted to support a small artist, so that's super cool of him if you ask me. 
+                                        Not many people in this space put their money where their mouth is, but Ned's definitely a real one. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/sarah.jpg" alt="">
+                            </div>
+                            <div class="person--desc">
+                                <h3 class="raleway-Med-Light">Sarah</h3>
+                            <p class="raleway-Low-Light">Sarah is an amazing human being
+                                who brought TWO pieces directly after my first ever collection went live. After meeting
+                                her in person, it only solidified my thoughts on her being such a vibrant and upbeat
+                                person, and I'm forever grateful to her.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/james.jpg" alt="">
+                            </div>
+                            <div class="person--desc"><h3 class="raleway-Med-Light">James</h3>
+                                <p class="raleway-Low-Light">James is a super interesting guy,
+                                    who has a deep passion for daos and crypto. He's the kind of guy where you always learn
+                                    something new after talking to him. After attending an exhibition he and the TyanHaus
+                                    crew hosted, he pushed for the sale of my collection like no other, and helped make it
+                                    completely sell out!</p></div>
+
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <div class="collector">
+                        <div class="person">
+
+                            <div class="image-text">
+                                <div class="person--image">
+                                    <img class="collector-img" src="Web Content/jon.jpg" alt="">
+                                </div>
+                                <div class="person--desc">
+                                    <h3 class="raleway-Med-Light">Jon</h3>
+                                <p class="raleway-Low-Light">If I had to say something about Jon, it's that if you're betting on having a good time talking to someone, it'll be him. 
+                                    Jon does super unique work, is a massive pleasure to be around and probably is one of the few people I would consider "going places". Watch out for him.</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/callum.jpg" alt="">
+                            </div>
+                            <div class="person--desc"><h3 class="raleway-Med-Light">Callum</h3>
+                                <p class="raleway-Low-Light">Callum is a solid guy who always gives off an air of friendliness. 
+                                    When James was pushing for my collection, right there on the spot he brought a piece without thinking twice. 
+                                    He's the kind of guy that you love to see around and always adds something to every interaction you have.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="person">
+
+                        <div class="image-text">
+                            <div class="person--image">
+                                <img class="collector-img" src="Web Content/coopah.jpg" alt="">
+                            </div>
+                            <div class="person--desc">
+                                <h3 class="raleway-Med-Light">Coopah</h3>
+                                <p class="raleway-Low-Light">After coopah followed James in buying out my collection, I had to check him out. 
+                                    Turns out, he does some super cool stuff! He's at the forefront of the music nft crowd, and turned me, 
+                                    someone who was initially kinda sceptical into a full believer of the craft.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="collector"id="last-collector" style="display: flex;">
+                        <div class="person" style="display: flex;">
+
+                            <div class="image-text">
+                                <div class="person--image">
+                                    <img class="collector-img" src="Web Content/ali.jpg" alt="">
+                                </div>
+                                <div class="person--desc">
+                                    <h3 class="raleway-Med-Light">Ali<br></h3>
+                                <p class="raleway-Low-Light">Ali is an awesome guy who just generally spreads positivity. 
+                                    He's helped give me tips on this site and was one of the first ones to volunteer! 
+                                    He also does some insane astrophotography, definitely someone you need to check out!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                   
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center; padding: 2rem;">
+                    <button class="button--dark raleway-Med-Light slideshow-button">
+                        Next
+                    </button>                    
+                </div>
+
+            </div>
+            <div class="main-bottom--collaborators">
+                <h2 class="raleway-Large-Light header2">Collaborators</h2>
+                <!-- <div class="colaborators"> -->
+                    <!-- <div style="height: 100%;"> -->
+                <!-- <div class="list"> -->
+                <ol class="raleway-Med-midLow collaborator-list"></ol>
+                <!-- </div> -->
+                <div class="collaborator--search input-border">
+                    <input class="input-search raleway-Low-Light" type="text" placeholder="Search">
+                    <i></i>
+                </div>
+
+                    <!-- </div> -->
+
+                <!-- </div> -->
+            </div>                
+
+            </div>
+        <div class="main-bottom--info">
+            <div class="who">
+                <h1 class="raleway-Large-Light">Who am I?</h1>
+                <p class="raleway-Low-Light">
+                    Hey! I'm Eden, a 16-year-old 3d artist from New Zealand, who loves to think up and implement new ideas and concepts. This is something I've only discovered recently, and it's mainly due to the NFT space that I've realised this.<br><br>
+                    I created my Twitter account after wanting to post my work when I was still a beginner, and then I saw quite a few artists that I look up to showing interest and from there it snowballed. Fast forward to the present, it's been the biggest change in my life so far. I've discovered so many new traits and quirks about me and have developed as a person immensely.<br><br>
+                    Apart from that, I enjoy a little coding, music, electrical engineering, video production and photography. But there's almost nothing I'm not interested in, to a degree!
+                </p>     
+            </div>
+
+            <div class="thanks">
+                <h1 class="raleway-Large-Light">Special Thanks</h1>
+                <p class="raleway-Low-Light">
+                    Closing off, I just wanted to say a few final things. First off, HUGE thanks to <a target="_blank" href="https://twitter.com/exploringni8sky">@exploringni8sky</a>. He's been super helpful in mentoring me with the website and doing some work on it, as I literally learnt how to code websites for this! Huge props to him, make sure you go check him out.<br><br>
+                    Another thanks goes to <a target="_blank" href="https://twitter.com/PAPERDIAMOND">@PAPERDIAMOND</a> for baring with my questions at the start, he definitely was a guiding light on where I should look first to get started developing this. Along with that, huge thanks to the people who tested and gave feedback on this website! Some notable people: <a target="_blank" href="https://twitter.com/outdoorzsafari">@outdoorzsafari</a>, <a target="_blank" href="http://https://twitter.com/battnft">@battnft</a> for the wonderful proofreading advice, xx, and everyone else who helped!<br><br>
+                    Finally, I want to thank YOU! Thank you for reading this far, thank you for being interested in me and my little projects, and thank you for just showing up, I seriously appreciate it. Enjoy the community project!
+
+                </p>   
+            </div>
+       
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

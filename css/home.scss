@@ -1,0 +1,50 @@
+
+.main-header{
+    margin: 1rem 0 2.5rem 0;
+     
+     &--inner{
+       align-items: center;
+       border-bottom: 0.6rem solid  var(--low);
+
+        .header--content{
+            display: flex;
+            
+            div{
+                padding-left: 5rem;
+                a{
+                    padding-left: 2rem;
+                }
+            }
+
+            .socials {
+                display: flex;
+                button {
+                    border: 0;
+                    background-color: transparent;
+                    padding-left: 10px;
+                    cursor: pointer;
+                    // margin-bottom: 0;
+                    // vertical-align: bottom;
+                    // margin: auto 0;
+                }
+            }
+            .social-image {
+                height: 19px;
+            }          
+        }
+
+     }
+}
+
+.main-header,
+.main-body,
+.main-bottom{
+    padding: 0 2.5rem;
+    &--inner{
+        display: flex;
+        max-width: 1920px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+    }
+}
