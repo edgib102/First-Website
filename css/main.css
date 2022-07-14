@@ -350,6 +350,10 @@
   position: relative;
 }
 
+.main-bottom--collaborators {
+  padding-right: 2rem;
+}
+
 .main-bottom--collaborators ol {
   margin-left: 3.5rem;
   margin: auto 0;

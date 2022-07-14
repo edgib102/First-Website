@@ -1,4 +1,10 @@
-
+@import "mixins";
+:root{
+    --low: #393B44;
+    --midLow: #8D93AB;
+    --midHigh: #D6E0F0;
+    --high: #F1F3F8;
+}
 .main-header{
     margin: 1rem 0 2.5rem 0;
      
@@ -10,7 +16,7 @@
             display: flex;
             
             div{
-                padding-left: 5rem;
+                // padding-left: 5rem;
                 a{
                     padding-left: 2rem;
                 }
@@ -35,6 +41,20 @@
 
      }
 }
+@include iPad(){
+    .main-header{
+        &--inner{
+            .header--content{
+                div{
+                    padding-left: 2rem;
+                    a{
+                        padding-left: 2rem;
+                    }
+                }
+            } 
+        }
+    }
+}
 
 .main-header,
 .main-body,
@@ -46,5 +66,86 @@
         width: 100%;
         margin: auto;
         justify-content: space-between;
+    }
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{ 
+        padding-top: 3rem;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+
+
+.main-body--inner{
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.carousel{
+    padding-top: 3rem;
+    // width: 100%;
+    img{
+        width: 100%;
+    }
+}
+
+.carousel-content-fixed{
+    position: absolute;
+    z-index: 1;
+    top: 5rem;
+    padding-left: 3rem;
+
+    h1{
+        padding-bottom: 3rem;
+        color: var(--high) !important;
+    }
+
+    .gallery-button{
+        padding: 0.5rem;
+
+        border-style: solid;
+        border-color: var(--midlow);
+        border-radius: 0.25rem;
+        border-width: 0.4rem;
+        background-color: transparent;
+
+        cursor: pointer;
+        
+    }:hover{
+            // color: var(--midHigh);
+        color: var(--high);
+    }
+}
+
+
+.main-bottom{
+    background-color: var(--low);
+    .main-bottom--inner{
+        // flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .current-events{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                padding-top: 1rem;
+            }
+        }
+        .contact{
+            display: flex;
+            flex-direction: column;
+            p{
+                padding-top: 1rem;                
+            }
+
+        }
     }
 }

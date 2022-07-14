@@ -67,6 +67,17 @@
   height: 19px;
 }
 
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 240px) and (max-width: 1024px) {
+  .main-header--inner .header--content div {
+    padding-left: 2rem;
+  }
+  .main-header--inner .header--content div a {
+    padding-left: 2rem;
+  }
+  /* Styles */
+}
+
 .top-nav {
   width: 100%;
   display: -webkit-box;
@@ -82,7 +93,7 @@
 }
 
 .top-nav div {
-  padding-top: 3rem !important;
+  padding-top: 2rem !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
