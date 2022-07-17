@@ -159,9 +159,32 @@
     }
 
 }
+@include iPad(){
+    .still-content,
+    .animation-content{
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .phone-hide{
+        display: none !important;
+    }
+}
 
-
-
+.main-bottom{
+    background-color: var(--low);
+    .main-bottom--inner{
+        .contact{
+            margin:  0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3rem;
+            p{
+                padding: 1rem;
+            }
+        }
+    }
+}
 // .main-body{
 //     background-color: var(--low);
 // }

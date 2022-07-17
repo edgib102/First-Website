@@ -16,7 +16,7 @@
             display: flex;
             
             div{
-                // padding-left: 5rem;
+                padding-right: 5rem;
                 a{
                     padding-left: 2rem;
                 }
@@ -46,7 +46,7 @@
         &--inner{
             .header--content{
                 div{
-                    padding-left: 2rem;
+                    padding-right: 2rem;
                     a{
                         padding-left: 2rem;
                     }
@@ -73,9 +73,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     p{ 
         padding-top: 3rem;
-        text-align: center;
         width: 90%;
     }
 }
@@ -126,7 +126,10 @@
 
 .main-bottom{
     background-color: var(--low);
+    // height: auto;
     .main-bottom--inner{
+        //hight is equal to the remaining unused space below the div. Height: auto; wont work
+
         // flex-direction: column;
         justify-content: space-evenly;
         padding-top: 3rem;
@@ -142,10 +145,23 @@
         .contact{
             display: flex;
             flex-direction: column;
+            // margin-top: auto;
+            // align-items: flex-end;
             p{
-                padding-top: 1rem;                
+                margin-top: auto;               
             }
 
         }
     }
 }
+
+@include iPad(){
+    .main-bottom--inner{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .current-events{
+            padding-bottom: 5rem;
+        }
+    }
+  }

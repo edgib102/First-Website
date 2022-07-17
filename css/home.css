@@ -22,6 +22,10 @@
   display: flex;
 }
 
+.main-header--inner .header--content div {
+  padding-right: 5rem;
+}
+
 .main-header--inner .header--content div a {
   padding-left: 2rem;
 }
@@ -46,7 +50,7 @@
 /* iPads (portrait and landscape) ----------- */
 @media screen and (min-width: 240px) and (max-width: 1024px) {
   .main-header--inner .header--content div {
-    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .main-header--inner .header--content div a {
     padding-left: 2rem;
@@ -85,11 +89,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .about p {
   padding-top: 3rem;
-  text-align: center;
   width: 90%;
 }
 
@@ -172,6 +176,24 @@
 }
 
 .main-bottom .main-bottom--inner .contact p {
-  padding-top: 1rem;
+  margin-top: auto;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 240px) and (max-width: 1024px) {
+  .main-bottom--inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main-bottom--inner .current-events {
+    padding-bottom: 5rem;
+  }
+  /* Styles */
 }
 /*# sourceMappingURL=home.css.map */

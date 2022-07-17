@@ -234,4 +234,40 @@
   width: 90%;
   margin: 0 auto;
 }
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width: 240px) and (max-width: 1024px) {
+  .still-content,
+  .animation-content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .phone-hide {
+    display: none !important;
+  }
+  /* Styles */
+}
+
+.main-bottom {
+  background-color: var(--low);
+}
+
+.main-bottom .main-bottom--inner .contact {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+}
+
+.main-bottom .main-bottom--inner .contact p {
+  padding: 1rem;
+}
 /*# sourceMappingURL=gallery.css.map */
